@@ -3,6 +3,15 @@
   <p align="center">Your one-stop shop for numerical integration in Python.</p>
 </p>
 
+---
+## This is one of the last versions before the library became proprietary
+Some remarks:
+* You must install and enable (`git lfs install`) git-lfs in your local installation
+* Pip has to be told to install against the gihtub repository: `pip install git+https://github.com/tsokar/quadpy`
+* Sorry, but I cannot not provide any support if it does not run on your computer
+
+---
+
 [![PyPi Version](https://img.shields.io/pypi/v/quadpy.svg?style=flat-square)](https://pypi.org/project/quadpy/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/quadpy.svg?style=flat-square)](https://pypi.org/project/quadpy/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1173132.svg?style=flat-square)](https://doi.org/10.5281/zenodo.1173132)
@@ -48,7 +57,7 @@ For example, to numerically integrate any function over any given interval, inst
 quadpy [from the Python Package Index](https://pypi.org/project/quadpy/) with
 
 ```
-pip install quadpy
+pip install git+https://github.com/tsokar/quadpy
 ```
 
 and do
