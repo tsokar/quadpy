@@ -217,7 +217,7 @@ def show_vtk(points, weights, volume, edges, balls=None, render=True):
     radii = np.cbrt(abs(weights) / math.fsum(weights) * volume / (4.0 / 3.0 * np.pi))
     sphere_actors = [
         get_sphere_actor(pt, radius, color=blue if weight > 0.0 else red)
-        for pt, weight, radius in zip(points.T, weights, radii)
+        for pt, weight, radius in zip(points, weights, radii)
     ]
 
     sphere_actors.extend(
